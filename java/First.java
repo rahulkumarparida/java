@@ -1,4 +1,4 @@
-         //sub-string:-to make a pariticular line stand out fromthe rest  of the string
+//satya was here         //sub-string:-to make a pariticular line stand out fromthe rest  of the string
          // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 import java.io.*;
