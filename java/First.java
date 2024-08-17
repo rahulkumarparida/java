@@ -3,7 +3,7 @@
 // Use this editor to write, compile and run your Java code online
 import java.io.*;
 import java.util.*;
-class First {
+class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello!! Today i am learning java (aug 15 2024)");
         System.out.println("gonna learn diffrent data types");
@@ -101,9 +101,9 @@ class First {
         
     //lets learn about scanner class now :- How do we get input?
     //first we nee to write
-    Scanner Sc=new Scanner(System.in);
+    Scanner sc=new Scanner(System.in);
     System.out.println("Enter Your age:- ");
-    int gen=Sc.nextInt();
+    int gen=sc.nextInt();
     System.out.println("Your age is "+gen);
     //for string
       System.out.println("Enter Your name:- ");
