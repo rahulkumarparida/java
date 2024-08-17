@@ -10,7 +10,7 @@ class typecasting{
         double d=99.9954;
 double ans =(f*b)+(i%c)-(d*s);
         System.out.println(ans);
-    
+        
     }
 }
 // did it in vs code
