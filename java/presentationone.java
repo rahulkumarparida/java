@@ -5,7 +5,7 @@ import java.io.*;
 import java.util.Scanner;
 
 
-public class javaj {
+public class presentationone {
 
     public static void main(String[] args) {
         // int a=10;
