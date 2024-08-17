@@ -13,3 +13,4 @@ double ans =(f*b)+(i%c)-(d*s);
     
     }
 }
+// did it in vs code
