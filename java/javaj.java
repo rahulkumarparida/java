@@ -66,7 +66,7 @@ public class javaj {
                 // }
          int i=0;
          while (i<=a) {
-            System.out.print(i+" ");
+            System.out.println(i+" ");
             i++;
          }
         }

@@ -1,5 +1,5 @@
 
-class HelloWorld {
+class typecasting{
     public static void main(String[] args) {
         System.out.println("Learning Java 17 Aug 2024");
         byte b=4;
