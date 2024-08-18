@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
-class prime {
-   public static boolean primeornot(int n){
+class primenumbers {
+    public static boolean primeornot(int n){
       if(n==2){
          return true;
       }
@@ -14,16 +14,17 @@ class prime {
       }
        return true;
    }
+    public static void primenum(int n){
+       for(int i =2 ; i<=n;i++){ 
+       if(primeornot(i)){
+        System.out.print(i+" ");
+       }
+       
+    }
+    }
     public static void main(String[] args) {
         System.out.println("Learning Java 18 Aug 2024");
-       Scanner sc=new Scanner(System.in);
-       System.out.println("Enter a number: ");
-       int n= sc.nextInt();//number to check
-      //  int c=1;//count
-        System.out.println(primeornot(n));
-           
+        primenum(100);
             
-   }
-   
-     
- }
+    }
+}
