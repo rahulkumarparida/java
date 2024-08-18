@@ -8,12 +8,14 @@ class decitobinary {
         int remiander = decinum%quotient;
         
         decinum=decinum/quotient;
-        System.out.println(remiander+" ");
+        System.out.print(remiander+" ");
+      
         binum=decinum;
               }
     }
     public static void main(String[] args) {
-        System.out.println("Learning Java DATE");
-        decitobinum(5);
+        System.out.println("Learning Java 18 Aug 2024");
+        decitobinum(4);
+        System.out.println("");
     }
 }
