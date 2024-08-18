@@ -1,3 +1,4 @@
+//factorial and binomiaal factorial
 import java.io.*;
 import java.util.*;
 class factorial {
@@ -10,12 +11,22 @@ class factorial {
         }
     return fact;
     }
+    public static int binomial(int m , int n){
+         int   fact_m= factorial(m);
+            int fact_n=factorial(n);
+          int  fcat_o=factorial(m-n);
+        int bino= fact_m/(fact_n*fcat_o);
+    
+        return bino;
+    }
     public static void main(String[] args) {
-        System.out.println("^..........Learning java 17 aug 2024.........^");
+        System.out.println("^..........Learning java 18 aug 2024.........^");
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enetr to number to fimnd the factorial---------> ");
-        int a=sc.nextInt(); 
-        System.out.println(factorial(a));
+        System.out.print("Enetr to number to find the factorial---------> ");
+        int m=sc.nextInt(); 
+        int n=sc.nextInt();
+        
+        System.out.println(binomial(m,n));
 
     }
 }

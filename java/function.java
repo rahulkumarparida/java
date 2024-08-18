@@ -9,25 +9,25 @@ class function {
     }
     //function with parameters
     //sum function
-public static int sum(int a , int b){
+public static int summ(int a , int b){
     int sum=a+b;
     System.out.println("The Sum is " +sum);
     return sum;
 }
 //multiply function
-public static int mul(int a , int b){
+public static int mult(int a , int b){
     int mul=a*b;
     System.out.println("The Multiplacation is " +mul);
     return mul;
 }
 //division function
-public static int div(int a , int b){
+public static int divi(int a , int b){
     int div=a/b;
     System.out.println("The Division is " +div);
     return div;
 }
 //substraction function
-public static int sub(int a , int b){
+public static int subs(int a , int b){
     int sub=a-b;
     System.out.println("The Substraction is " +sub);
     return sub;
@@ -40,10 +40,10 @@ public static int sub(int a , int b){
         System.out.println("Enter Two Numbers: ");
         int a=sc.nextInt();
         int b=sc.nextInt();
-       int sum= sum(a ,b);
-       int mul= mul(a ,b);
-       int div= div(a ,b);   
-       int sub= sub(a ,b);
+       int sum= summ(a ,b);
+       int mul= mult(a ,b);
+       int div= divi(a ,b);   
+       int sub= subs(a ,b);
 
 
 
