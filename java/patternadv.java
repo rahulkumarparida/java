@@ -51,15 +51,37 @@ class patternadv {
             System.out.println();
         }
     }
-    public static void main(String[] args) {
-        System.out.println("Learning Java 20 AUg 2024 ");
-        hollowrect(5,8);
-        System.out.println("");
-        invrtdpyramid(4);
-        System.out.println("");
-       haflpyramidopp(5);
-       System.out.println("");
-       floydtriangle(4);
+     public static void onezerotriangle(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
 
+                if((j+i)%2==0){
+                    System.out.print("1 ");
+                }
+                else{
+                    System.out.print("0 ");
+                }
+
+            }
+        System.out.println();
+        }
+     }
+     public static void butterflypattern(int m){
+        
+
+     }
+    public static void main(String[] args) {
+        System.out.println("Learning Java 21 Aug 2024 ");
+    //     hollowrect(5,8);
+    //     System.out.println("");
+    //     invrtdpyramid(4);
+    //     System.out.println("");
+    //    haflpyramidopp(5);
+    //    System.out.println("");
+    //    floydtriangle(4);
+    //    System.out.println("");
+    //    onezerotriangle(5);
+       System.out.println(""); 
+              
     }
 }
