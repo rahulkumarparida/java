@@ -12,12 +12,12 @@ class decitobinary {
             int pow=0;
             int binum=0;
             while(decinum>0){
-              int remiander = binum%2;
-              binum=binum+(remiander*(int)Math.pow(10,pow));
+              int remainder = binum%2;
+              binum=binum+(remainder*(int)Math.pow(10,pow));
               pow++;
 
             }
-        System.out.println(remiander+" ");
+        System.out.println(binum+" ");
               }
     
     public static void main(String[] args) {
