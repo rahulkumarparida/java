@@ -13,7 +13,7 @@ class decitobinary {
             int binum=0;
             while(decinum>0){
               int remiander = binum%2;
-              binum=bninum+(remiander*(int)Math.pow(10,pow));
+              binum=binum+(remiander*(int)Math.pow(10,pow));
               pow++;
 
             }
