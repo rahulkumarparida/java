@@ -130,49 +130,80 @@ class patternadv {
             System.out.println();
         }
     }
-    // public static void diamond_pattern(int m) {
-    //     // first half (full pyramid)
-    //     for(int j=1; j<=m;j++){
-    //         for(int k=1;k<=(m-j);k++){
-    //             System.out.print(" ");
-    //         }
-            
-    //     }
-    //     for(int i=1;i<=m;i++){
-    //         int h=i%2;
-
-    //         for(int j=1;j<=i;j++){
-    //             if (h!=0) {
-                    
-    //             System.out.print("*");
-    //             }
+    public static void diamond_pattern(int m) {
+        // first half (full pyramid)
+        for(int i=1;i<=m;i++){      
+            for(int j=1;j<=(m-i);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=(2*i-1);j++){
                 
-    //         }
+                    System.out.print("*");
+                
+                
+            }
+            
+                System.out.println("");
+        }
+        // second half
+        for(int k=m;k>=1;k--){      
+            for(int j=1;j<=(m-k);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=(2*k)-1;j++){
+            
+                    System.out.print("*");
+                
+                
+            }
+            
+                System.out.println("");
+        }
 
-    //         System.out.println();
+    }
         
+    public static void number_pyyramid(int n) {
+        for (int i = 1; i <=n; i++) {
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(i + " ");
+            }
+            System.out.println("");
+        }
+    }
         
-    
+    public static void palindromic_pyramid(int n) {
+        for(int i=1;i<=n;i++){
+        
+            
 
+        }
+
+    }
     public static void main(String[] args) {
         System.out.println("Learning Java 24 Aug 2024 ");
-        hollowrect(5,8);
-        System.out.println("");
-        invrtdpyramid(4);
-        System.out.println("");
-       haflpyramidopp(5);
-       System.out.println("");
-       floydtriangle(4);
-       System.out.println("");
-       onezerotriangle(5);
-       System.out.println(""); 
-       butterflypattern(5);
-    System.out.println("");
-    solid_rhombus(6);
-System.out.println("");
-hollow_rhombus(7);
+//         hollowrect(5,8);
+//         System.out.println("");
+//         invrtdpyramid(4);
+//         System.out.println("");
+//        haflpyramidopp(5);
+//        System.out.println("");
+//        floydtriangle(4);
+//        System.out.println("");
+//        onezerotriangle(5);
+//        System.out.println(""); 
+//        butterflypattern(5);
+//     System.out.println("");
+//     solid_rhombus(6);
 // System.out.println("");
-// diamond_pattern(7);
-
+// hollow_rhombus(7);
+// System.out.println("");
+// diamond_pattern(5);
+// System.out.println("");
+// number_pyyramid(5);
+System.out.println("");
+palindromic_pyramid(5);
     }
 }
