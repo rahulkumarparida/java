@@ -66,24 +66,96 @@ class patternadv {
         System.out.println();
         }
      }
-    //  public static void butterflypattern(int m){
-    //     for(int i=1;i<=m;i++){
-    //        int k=2*m-i;
-    //         for (int j=1;j<=i;j++){
-    //         if(k!=0) {
-    //             System.out.print("*");
-    //         }
-    //         else{
+     public static void butterflypattern(int n){
+     // first half
+       for(int i=1;i<=n;i++){
+         for(int j=1;j<=i;j++){
+            System.out.print("*");
+         }
+         for(int j=1;j<=2*(n-i);j++){
+            System.out.print(" ");
+
+         }
+         for (int j=1; j<=i; j++) {
+            System.out.print("*");
+         }
+         System.out.println("");
+       }
+       //second half 
+       for (int i = n; i>=1; i--) {
+        for(int j=1;j<=i;j++){
+           System.out.print("*");
+        }
+        for(int j=1;j<=2*(n-i);j++){
+           System.out.print(" ");
+
+        }
+        for (int j = 1; j<=i; j++) {
+           System.out.print("*");
+        }
+        System.out.println("");
+        
+       }
+
+    }
+    public static void solid_rhombus(int n) {
+        
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=(n-i);j++){
+                System.out.print(" ");
+            }
+          for(int j=1;j<=n;j++){
+            System.out.print("*");
+          }
+            System.out.println();
+        }
+    }
+    public static void hollow_rhombus(int row){
+        for(int i=1;i<=row;i++){
+            //for spaces outsidde the rhombus
+            for(int j=1;j<=(row-i);j++){
+                System.out.print(" ");
+            }
+            //for * and spaces inside the rhombus
+          for(int j=1;j<=row;j++){
+            //for *
+            if (i==1||i==row||j==1||j==row) {
+                System.out.print("* ");
+            }
+            //for spaces
+           else{
+            System.out.print("  ");
+           }
+          }
+            System.out.println();
+        }
+    }
+    // public static void diamond_pattern(int m) {
+    //     // first half (full pyramid)
+    //     for(int j=1; j<=m;j++){
+    //         for(int k=1;k<=(m-j);k++){
     //             System.out.print(" ");
     //         }
-    //         System.out.println();
+            
     //     }
+    //     for(int i=1;i<=m;i++){
+    //         int h=i%2;
 
-    //  }
+    //         for(int j=1;j<=i;j++){
+    //             if (h!=0) {
+                    
+    //             System.out.print("*");
+    //             }
+                
+    //         }
+
+    //         System.out.println();
+        
+        
     
-    // }
+
     public static void main(String[] args) {
-        System.out.println("Learning Java 21 Aug 2024 ");
+        System.out.println("Learning Java 24 Aug 2024 ");
         hollowrect(5,8);
         System.out.println("");
         invrtdpyramid(4);
@@ -93,8 +165,14 @@ class patternadv {
        floydtriangle(4);
        System.out.println("");
        onezerotriangle(5);
-    //    System.out.println(""); 
-    //    butterflypattern(4);
-              
+       System.out.println(""); 
+       butterflypattern(5);
+    System.out.println("");
+    solid_rhombus(6);
+System.out.println("");
+hollow_rhombus(7);
+// System.out.println("");
+// diamond_pattern(7);
+
     }
 }

@@ -25,7 +25,7 @@ class pattern {
 **
 ***
 ****
-// ***** */
+***** */
 
                     // int a=1;
                     // for(int i=5;i>=a;i--){
@@ -78,24 +78,34 @@ class pattern {
 // 11.9 12.9 13.9 14.9 15.9 
 // 16.9 17.9 18.9 19.9 20.9 21.9 
 
-                     int c=5;
-                    String f= "Rahul";
-                    for(int i=0;i<=c;i++)
-                    {
-                        for(int j=0;j<=i;j++)
-                        {
-                            System.out.print(f+" ");
+    //                  int c=5;
+    //                 String f= "Rahul";
+    //                 for(int i=0;i<=c;i++)
+    //                 {
+    //                     for(int j=0;j<=i;j++)
+    //                     {
+    //                         System.out.print(f+" ");
                         
-                        }
-                        System.out.println(""); 
-    }
+    //                     }
+    //                     System.out.println(""); 
+    // }
 // Rahul
 // Rahul Rahul 
 // Rahul Rahul Rahul 
 // Rahul Rahul Rahul Rahul 
 // Rahul Rahul Rahul Rahul Rahul 
 // Rahul Rahul Rahul Rahul Rahul Rahul 
-                              
+                              int n=5;
+                              for(int i=1;i<=n;i++){
+                                for (int j = 1; j<=n-i; j++) {
+                                    System.out.print(" ");
+                                }
+                                for (int j = 1; j <=i; j++) {
+                                    System.out.print("*");
+                                         
+                        }
+                        System.out.println();   
+    }
                    
 
         }
