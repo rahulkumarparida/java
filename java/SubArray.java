@@ -99,14 +99,16 @@ public class SubArray {
             currentsum = currentsum + num[i];
             for (int j = 0; j < num.length; j++) {
                 if (num[i] < 0) {
-                    System.out.print(num[i]+" ");
+                  num[i]= num[i];
                 }
             } 
+            System.out.print(num[i]+"  ");
            if(currentsum > Maxsum){
               Maxsum = currentsum;
             }
 
         }
+        System.out.println();
         System.out.println("Current sum   "+currentsum);
         System.out.println("Maximum sum  "+Maxsum);
     }
