@@ -66,30 +66,56 @@ public class SubArray {
             if(Minsum > sum){
                 Minsum = sum;
             }
-             System.out.print("  " + sum);
-            
-               
-             
-            
-            
-
-         }
-       
-         System.out.println(); 
-      
-         
+             System.out.print("  " + sum);                                  
+         }       
+         System.out.println();             
      }
      System.out.println("Max NUmmber is " + Maxsum);
      System.out.println("Min Nummber is " + Minsum);
     System.out.println("Total Sub arrays is  "+ count);
-    
+    }
+    public static void kadanesMaxSubArray(int number[]){
+        int Maxsum = Integer.MIN_VALUE;
+        int currentsum = 0;
+        
+        for (int i = 0; i < number.length; i++) {
+            currentsum = currentsum + number[i];
+            if (currentsum< 0) {
+                currentsum = 0;
+            }
+            else if(currentsum > Maxsum){
+              Maxsum = currentsum;
+            }
+
+        }
+        System.out.println("Current sum is  "+currentsum);
+        System.out.println("Maximum sum is "+Maxsum);
+    }
+    public static void kadanesMaxSubArrayNeagtive(int num[]){
+        int Maxsum = Integer.MIN_VALUE;
+        int currentsum = 0;
    
+        for (int i = 0; i < num.length; i++) {
+            currentsum = currentsum + num[i];
+            for (int j = 0; j < num.length; j++) {
+                if (num[i] < 0) {
+                    System.out.print(num[i]+" ");
+                }
+            } 
+           if(currentsum > Maxsum){
+              Maxsum = currentsum;
+            }
 
-
+        }
+        System.out.println("Current sum   "+currentsum);
+        System.out.println("Maximum sum  "+Maxsum);
     }
     public static void main(String[] args) {
-        int num[]= {2,4,6,8,10};
+        int num[]= {-2,-4,-6,-8,-10};
         subarray(num);
         prefixsubarray(num);
+        int number[]={-2,-3,4,-1,-2,1,5,-3};
+        kadanesMaxSubArray(number);
+        kadanesMaxSubArrayNeagtive(num);
     }
 }
