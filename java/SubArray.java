@@ -5,14 +5,14 @@ public class SubArray {
         
         int Maxsum = Integer.MIN_VALUE;
         int Minsum = Integer.MAX_VALUE;
-        // int TotalofSubarrays[]={};
+       
         int sum = 0;
         for (int i = 0; i < num.length; i++) {
             for(int j= i ; j< num.length ; j++){
                 sum=0;
                  for (int k = i; k<= j ; k++) {
 
-                    //  System.out.print(num[k]+" " );
+                  
                      sum += num[k];    
                  }
                  count++;
@@ -26,8 +26,7 @@ public class SubArray {
                     Minsum = sum;
                 }
         
-                // total.add()=TotalofSubarrays[];
-                //  System.out.print(" , ");
+            
                
                
 
