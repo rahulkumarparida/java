@@ -7,7 +7,7 @@ public class trapppingRainwater {
        for ( i = 0; i < buildings.length; i++) {
           if (buildings[i]>buildings[i+1]) {
             buildings[i] = MaxNumLeft[i];
-            MaxNumLeft[i]++;
+           
           }
        }
        System.out.println(MaxNumLeft[i]);
