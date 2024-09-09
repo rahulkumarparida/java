@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 public class CountingSort {
     public static void CountingSortAscending(int arr[]){
         int large = Integer.MIN_VALUE;
@@ -11,10 +14,10 @@ public class CountingSort {
         }
         int j = 0;
         for (int i = 0; i < count.length; i++) {
-            arr[j] =i;
+            arr[j] = i;
             j++;
             count[i]--;
-           System.out.print(count[j] + " ");
+           System.out.print(i + " ");
         }
         System.out.println();
     }
